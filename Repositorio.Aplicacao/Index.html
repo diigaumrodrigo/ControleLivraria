@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Controle Livraria</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/jquery.dataTables.min.css" rel="stylesheet" />
+    <link href="css/app.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="loading">
+        <img src="images/loading.svg" alt="Carregando..." />
+    </div>
+    <div class="aviso"></div>
+    <div class="bg_modal">
+        <p class="fechar_modal">Fechar</p>
+    </div>
+    <div class="modal_livro"></div>
+
+    <section class="corpo_pagina">
+
+        <button class="btn btn-primary" id="btnRegerarBaseDados">Regerar Base de Dados</button>
+        <button class="btn btn-primary" id="btnAdicionarLivro">Adicionar Livro</button>
+
+        <hr />
+
+        <table id="tabela_livros"></table>
+    </section>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/jquery.dataTables.min.js"></script>
+    <script src="js/moment.js"></script>
+    <script src="js/aviso.js"></script>
+    <script src="js/util.js"></script>
+    <script src="js/livros.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

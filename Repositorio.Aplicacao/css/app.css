@@ -1,0 +1,151 @@
+﻿* {
+    box-sizing: content-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    background-color: #FFF;
+    font-size: 12px;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.corpo_pagina {
+    width: calc(100% - 70px);
+    height: auto;
+    padding: 20px;
+}
+
+.loading {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+    position: fixed;
+    z-index: 6;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.loading img {
+    width: 60px;
+    z-index: 6;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin: -30px 0 0 -30px;
+}
+
+.aviso {
+    box-sizing: border-box;
+    max-height: 200px;
+    padding: 16px;
+    width: 100%;
+    height: auto;
+    overflow-y: auto;
+    background-color: rgba(0, 0, 0, 0.85);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.9);
+    position: fixed;
+    top: 0;
+    z-index: 6;
+    display: none
+}
+
+.aviso p {
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    color: #FFF
+}
+
+.aviso::-webkit-scrollbar-track,
+.aviso::-webkit-scrollbar-thumb {
+    -webkit-box-shadow: inset 0 0 45px rgba(214, 214, 214, 0.34);
+}
+
+ul::-webkit-scrollbar-track,
+ul::-webkit-scrollbar-thumb {
+    -webkit-box-shadow: inset 0 0 45px rgba(46, 46, 46, 0.34);
+}
+
+.aviso::-webkit-scrollbar,
+ul::-webkit-scrollbar {
+    width: 6px
+}
+
+.bg_modal {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.83);
+    box-shadow: 0 0 170px rgba(0, 0, 0, 0.8) inset;
+    z-index: 4;
+    margin: 0;
+    padding: 0;
+    display: none;
+}
+
+.fechar_modal {
+    background-color: #007bff;
+    color: #FFF;
+    width: 42px;
+    padding: 10px 20px;
+    border-radius: 10px 10px 0 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 14px;
+    margin: -230px 0 0 -600px;
+    cursor: pointer;
+}
+
+.modal_livro {
+    width: 1200px;
+    height: 375px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin: -190px 0 0 -600px;
+    z-index: 5;
+    background-color: #FFF;
+    border-radius: 0 5px 5px 5px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.75);
+    display: none;
+}
+
+.modal_livro_int {
+    width: 90%;
+    margin: 20px auto;
+}
+
+.modal_livro h3 {
+    margin: 0;
+    color: #007bff;
+}
+
+table {
+    width: 100% !important;
+    text-align: center;
+}
+
+.odd {
+    background-color: #c7dbf1 !important;
+}
+
+.img_dt_tables {
+    width: 20px;
+}
+
+.img_click {
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.img_click:hover {
+    opacity: 0.7;
+    filter: grayscale(80%);
+}
